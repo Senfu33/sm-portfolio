@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        bottom: 2%;
+        left: 5%;
+        z-index: 2;
+    }
+
+    .hero-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .navbar-container {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        justify-content: space-between;
+        z-index: 3;
+        top: 3%;
+
+        .btn {
+            width: 12%;
+            height: auto;
+            border-radius: 20px;
+            padding: 2.5px;
+            background-color: rgba(255, 255, 255, 0.589);
+            border-color: transparent;
+            margin: 0 2% 0 2%;
+            font-family: "Outfit";
+            font-weight: 500;
+            transition: transform 1s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: rgba(0, 0, 0, 0.438);
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+
+        .contact {
+            background-color: rgba(0, 0, 0, 0.548);
+            color: #fff;
+
+            &:hover {
+                background-color: rgba(255, 98, 50, 0.774);
+                color: black;
+            }
+        }
+    }
+
+    p {
+        position: absolute;
+        bottom: 4%;
+        right: 5%;
+        font-family: "Outfit";
+        font-size: 2rem;
+        font-weight: 500;
+        z-index: 3;
+    }
+}
